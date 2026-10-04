@@ -1,0 +1,22 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "cf-worker-assignment",
+	"main": "src/index.js", // or "src/index.ts" if using TypeScript
+	"compatibility_date": "2026-01-01",
+	"account_id": "xxxxxxxxxx",
+	// Requirement 7d: Bind your private R2 bucket to your worker
+	"r2_buckets": [
+		{
+			"binding": "FLAGS_BUCKET",
+			"bucket_name": "country-flags" // Replace with your actual R2 bucket name
+		}
+	],
+	// Route to trigger worker on your tunnel subdomain
+	"routes": [
+		{
+			"pattern": "tunnel.haticetunca.com/secure*",
+			"zone_name": "haticetunca.com"
+		}
+	]
+}
+
