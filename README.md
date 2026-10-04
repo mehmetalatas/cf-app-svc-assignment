@@ -1,4 +1,4 @@
-# Cloudflare Worker Identity & Dynamic Asset Gateway
+# Cloudflare Worker and R2 Web Application with Google IdP
 
 This repository contains an enterprise-grade **Cloudflare Worker** integrated with **Cloudflare Zero Trust (Access)** and **Cloudflare R2 Object Storage**. 
 
