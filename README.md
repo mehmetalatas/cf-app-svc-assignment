@@ -6,28 +6,6 @@ It demonstrates edge-side identity parsing, dynamic HTML rendering, and secure, 
 
 ---
 
-## Architecture Overview
-User / Client
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│ Cloudflare Access (Zero Trust ZTNA)                     │
-│ └─ Enforces Identity & SSO (Google / Okta / SAML / OTP) │
-└───────────────────────────┬────────────────────────────┘
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│ Cloudflare Worker (Edge Router)                         │
-│ ├─ Decodes Access Headers (CF-Access-Authenticated-User-Email) │
-│ ├─ Extracts Request Metadata (request.cf.country)      │
-│ └─ Serves /secure (HTML) & /secure/${COUNTRY} (SVG)    │
-└───────────────────────────┬────────────────────────────┘
-│
-▼
-┌────────────────────────────────────────────────────────┐
-│ Cloudflare R2 Bucket (Private Flag Assets)             │
-│ └─ Serves SVG Assets with image/svg+xml Content-Type │
-└────────────────────────────────────────────────────────┘
 
 ## Key Features
 
