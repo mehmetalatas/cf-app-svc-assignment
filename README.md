@@ -28,7 +28,6 @@ User / Client
 │ Cloudflare R2 Bucket (Private Flag Assets)             │
 │ └─ Serves SVG Assets with image/svg+xml Content-Type │
 └────────────────────────────────────────────────────────┘
-
 ---
 
 ## Key Features
