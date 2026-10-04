@@ -64,16 +64,17 @@ Before running or deploying this project, ensure you have:
 
 Getting Started
 1. Clone the Repository
+
 git clone [https://github.com/mehmetalatas/cf-app-svc-assignment.git](https://github.com/mehmetalatas/cf-app-svc-assignment.git)
 cd cf-app-svc-assignment
 
-2. Install Dependencies
+3. Install Dependencies
 npm install
 
-3. Configure Cloudflare R2 Bucket
+4. Configure Cloudflare R2 Bucket
 Create a private R2 bucket named country-flags and upload your SVG assets (e.g., us.svg, uk.svg, pt.svg):
 
-4. Configure wrangler.jsonc
+5. Configure wrangler.jsonc
 {
   "name": "cf-worker-assignment",
   "main": "src/index.mjs",
