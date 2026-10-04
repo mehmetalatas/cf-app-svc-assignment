@@ -96,12 +96,15 @@ Create a private R2 bucket named country-flags and upload your SVG assets (e.g.,
 
 Local Development & Testing
 Run the Worker locally using Wrangler:
+
 npx wrangler dev
 
 # Log in to Cloudflare
+
 npx wrangler login
 
 # Deploy Worker to Cloudflare Edge
+
 npx wrangler deploy
 
 Verification
