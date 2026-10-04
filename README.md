@@ -60,6 +60,7 @@ Before running or deploying this project, ensure you have:
 ├── wrangler.jsonc        # Cloudflare Wrangler configuration & bindings
 ├── package.json          # Project dependencies and scripts
 └── README.md             # Repository documentation
+```
 
 Getting Started
 1. Clone the Repository
